@@ -6,7 +6,6 @@ class TodoList
         this.fetchUrl = "https://api.myjson.com/bins/9l2ez";
         this.liClassnamePrefix = "todolist-element";
         this.liClassnameClicked = "todolist-element-complete";
-        this.getList();
     }
     
     
@@ -58,4 +57,5 @@ class TodoList
     }
 }
 
-new TodoList("TODOTarget");
+let todolist = new TodoList("TODOTarget");
+todolist.getList();
